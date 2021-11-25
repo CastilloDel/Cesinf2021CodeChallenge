@@ -19,7 +19,7 @@ fn getNumberOfGroups(
             nColumns, aisleSeat, row.items, groupSize
         ); 
     }
-    // We don't need to free each row, because getNumberOfGroups takes their ownership
+    // We don't need to free each row, because getNumberOfGroupsInRow takes their ownership
     positionsByRow.deinit(); 
     return total;
 }
